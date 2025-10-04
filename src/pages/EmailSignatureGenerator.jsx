@@ -1,9 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { Upload, Copy, CheckCircle, Mail, Phone, Facebook } from 'lucide-react';
-import VmoLogo from '../assets/OVM-Logo - Green - Approved.png';
-import VmoLogoOrig from '../assets/OVM-Logo.png';
-import SBLogo from '../assets/sb-logo.png';
-import VMOSB from '../assets/fb-cover-WITH-SB-LOGO-Left-Right-wrapped.png';
+import MyLogo from '../assets/logo-200.png';
+import HeaderWrapped from '../assets/header-wrapped.png';
 
 export default function EmailSignatureGenerator() {
   const [imageBase64, setImageBase64] = useState(null);
@@ -14,12 +12,12 @@ export default function EmailSignatureGenerator() {
   const canvasRef = useRef(null);
 
   // Editable content
-  const [name, setName] = useState('Legislative Department');
-  const [location, setLocation] = useState('Santa Cruz, Davao del Sur');
-  const [email, setEmail] = useState('vmosantacruz@gmail.com');
-  const [phone, setPhone] = useState('+63 997 850 9514');
-  const [facebook, setFacebook] = useState('fb.com/legislative.dept.stacruz.davsur');
-  const [selectedColor, setSelectedColor] = useState('#387ff1');
+  const [name, setName] = useState('Atty. Charlotte F. Gallego');
+  const [location, setLocation] = useState('Gallego Law - Principal');
+  const [email, setEmail] = useState('cgallegolaw@gmail.com');
+  const [phone, setPhone] = useState('0946 762 7910');
+  const [facebook, setFacebook] = useState('fb.com/Atty.AlotGallego');
+  const [selectedColor, setSelectedColor] = useState('#b9847c');
   const [disclaimer, setDisclaimer] = useState('CONFIDENTIALITY NOTICE: This email and any attachments are confidential and intended solely for the use of the individual or entity to whom they are addressed. If you are not the intended recipient, please notify the sender immediately and delete this email. Any unauthorized review, use, disclosure, or distribution is prohibited.');
 
   const colorOptions = [
@@ -176,43 +174,19 @@ export default function EmailSignatureGenerator() {
                 </div>
               )}
             </td>
-            {/* <td style={{ verticalAlign: 'top', background: 'transparent', paddingLeft:'20px' }}>
-              <table align="center" border={0}>
-                <tr>
-                  <td>
-                    <img 
-                      src={VmoLogo} 
-                      alt="Logo" 
-                      width="32"
-                      height="32"
-                      style={{ width: '32px', height: '32px', display: 'block', background: 'transparent' }}
-                    />
-                  </td>
-                  <td>
-                    <img 
-                      src={SBLogo} 
-                      alt="SB Logo" 
-                      width="36"
-                      height="42"
-                      style={{ width: '36px', height: '42px', display: 'block', background: 'transparent' }}
-                    />
-                  </td>
-                </tr>
-              </table>
-            </td> */}
           </tr>
         </tbody>
       </table>
                 
       {/* Disclaimer */}
-      <div style={{ marginTop: '8px', borderTop: '1px solid #e0e0e0', fontSize: '10px', color: '#888', lineHeight: '1.5', maxWidth: '500px', background: 'transparent' }}>
+      <div style={{ marginTop: '16px', borderTop: '1px solid #e0e0e0', fontSize: '10px', color: '#888', lineHeight: '1.5', maxWidth: '500px', background: 'transparent' }}>
         {/* VMO & SB */}
         <img 
-          src={VMOSB} 
+          src={HeaderWrapped} 
           alt="Logo" 
           width="100%"
           height="auto"
-          style={{ maxWidth: '500px', background: 'transparent', marginTop: '8px', marginBottom:'8px' }}
+          style={{ maxWidth: '500px', background: 'transparent', marginTop: '16px', marginBottom:'16px' }}
         />
         
         {disclaimer}
@@ -222,15 +196,15 @@ export default function EmailSignatureGenerator() {
   ) : null;
 
   return (
-    <div className="bg-gray-50 px-2 sm:px-4 py-4 sm:py-8 min-h-screen">
+    <div className="px-2 sm:px-4 py-4 sm:py-8 min-h-screen">
       <div className="mx-auto max-w-4xl">
         {/* Header */}
         <div className="relative bg-white shadow-md mb-4 sm:mb-6 p-4 sm:p-8 rounded-lg">
           <div className="pr-16 sm:pr-24">
-            <h1 className="mb-2 font-bold text-xl sm:text-2xl lg:text-3xl leading-tight" style={{ color: selectedColor }}>📧 VMO - Email Signature Generator</h1>
+            <h1 className="mb-2 font-bold text-xl sm:text-2xl lg:text-3xl leading-tight" style={{ color: selectedColor }}>📧 Gallego Law - Email Signature Generator</h1>
             <p className="text-gray-600 text-sm sm:text-base">Create a professional email signature for Gmail</p>
           </div>
-          <img src={VmoLogoOrig} alt="Logo" className="top-3 sm:top-4 right-3 sm:right-4 lg:right-8 absolute w-12 sm:w-16 lg:w-24 h-12 sm:h-16 lg:h-24" />
+          <img src={MyLogo} alt="Logo" className="top-3 sm:top-4 right-3 sm:right-4 lg:right-8 absolute w-12 sm:w-16 lg:w-24 h-12 sm:h-16 lg:h-24" />
         </div>
 
         {/* Content Editor Section */}
