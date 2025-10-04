@@ -4,6 +4,6 @@
 
 @layer base {
     body{
-        @apply bg-gradient-to-tr from-[#b9847c] to-[#754037];
+        @apply bg-gradient-to-tr from-[#754037] to-[#b9847c];
     }
 }
