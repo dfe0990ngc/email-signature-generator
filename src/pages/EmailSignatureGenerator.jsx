@@ -154,7 +154,7 @@ export default function EmailSignatureGenerator() {
                         <table cellPadding="0" cellSpacing="0" border="0" style={{ borderCollapse: 'collapse', width: '100%' }}>
                           <tbody>
                             <tr>
-                              <td style={{ verticalAlign: 'middle', padding: '3px 0' }}>
+                              <td style={{ verticalAlign: 'middle', padding: '2px 0' }}>
                                 <img
                                   src="https://res.cloudinary.com/duybphdbl/image/upload/v1759619668/email-brown_lenfwx.png"
                                   alt="Email"
@@ -169,7 +169,7 @@ export default function EmailSignatureGenerator() {
                             </tr>
 
                             <tr>
-                              <td style={{ verticalAlign: 'middle', padding: '3px 0' }}>
+                              <td style={{ verticalAlign: 'middle', padding: '2px 0' }}>
                                 <img
                                   src="https://res.cloudinary.com/duybphdbl/image/upload/v1759619668/phone-brown_tai1qm.png"
                                   alt="Phone"
@@ -185,7 +185,7 @@ export default function EmailSignatureGenerator() {
 
                             {facebook && (
                               <tr>
-                                <td style={{ verticalAlign: 'middle', padding: '3px 0' }}>
+                                <td style={{ verticalAlign: 'middle', padding: '2px 0' }}>
                                   <img
                                     src="https://res.cloudinary.com/duybphdbl/image/upload/v1759619667/facebook-brown_wkzyle.png"
                                     alt="Facebook"
